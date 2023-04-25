@@ -60,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
             numberOfJumps = 0;
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
             numberOfJumps++;
+            AudioManager.instance.Play("Jump");
 
         }
         else
