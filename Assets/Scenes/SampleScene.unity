@@ -247,6 +247,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 250
   jumpForce: 5
+  groundCheck: {fileID: 1557809448}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
   playerRB: {fileID: 119765639}
   animator: {fileID: 119765642}
 --- !u!95 &119765642 stripped
@@ -534,7 +538,7 @@ GameObject:
   - component: {fileID: 1461768998}
   - component: {fileID: 1461768997}
   - component: {fileID: 1461768999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1399,6 +1403,11 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!4 &1557809448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7855263118112886426, guid: 521aebf732701414da1c25c63cb8390b, type: 3}
+  m_PrefabInstance: {fileID: 1851077046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1560282097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 971272142347798929, guid: 521aebf732701414da1c25c63cb8390b, type: 3}
+      propertyPath: m_Name
+      value: groundCheck
+      objectReference: {fileID: 0}
     - target: {fileID: 2053518115102101878, guid: 521aebf732701414da1c25c63cb8390b, type: 3}
       propertyPath: m_Controller
       value: 
