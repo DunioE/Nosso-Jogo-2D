@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 400;
     bool isFacingRight = true;
 
+    public float jumpForce = 5;
+
     public Rigidbody2D playerRB;
     public Animator animator;
 
@@ -22,12 +24,16 @@ public class PlayerMovement : MonoBehaviour
         {
             direction = ctx.ReadValue<float>();
         };
+
+        controls.Land.Jump.performed += ctx => Jump();
+ 
     }
 
 
-    void Update()
+
+    void FixedUpdate()
     {
-        playerRB.velocity = new Vector2(direction * speed * Time.deltaTime, playerRB.velocity.y);
+        playerRB.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, playerRB.velocity.y);
         animator.SetFloat("speed", Mathf.Abs(direction));
 
         if (isFacingRight && direction < 0 || !isFacingRight && direction >0)
@@ -38,5 +44,10 @@ public class PlayerMovement : MonoBehaviour
     {
         isFacingRight = !isFacingRight;
         transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+    }
+
+    void Jump()
+    {
+        playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
     }
 }

@@ -245,7 +245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0f54b3baa5f234bba229d1ccad4786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1500
+  speed: 250
+  jumpForce: 5
   playerRB: {fileID: 119765639}
   animator: {fileID: 119765642}
 --- !u!95 &119765642 stripped
