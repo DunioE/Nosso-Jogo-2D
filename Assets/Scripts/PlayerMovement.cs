@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 400;
 
     public Rigidbody2D playerRB;
+    public Animator animator;
 
     private void Awake()
     {
@@ -26,5 +27,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         playerRB.velocity = new Vector2(direction * speed * Time.deltaTime, playerRB.velocity.y);
+        animator.SetFloat("speed", Mathf.Abs(direction));
     }
 }
