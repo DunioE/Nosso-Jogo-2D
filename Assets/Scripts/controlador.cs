@@ -1,32 +1,32 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class PlayerManager1 : MonoBehaviour
+public class controlador : MonoBehaviour
 {
 
-    public static bool isGameOver;
-    public GameObject gameOverScreen;
-
-    public static Vector2 lastCheckPointPos = new Vector2(75.3f,1.7f);
+    public static bool isGameOn;
+    public GameObject gameOverS;
+    
+    public static Vector2 lastCheckPointPos = new Vector2(7.3f, 1.7f);
 
     private void Awake()
     {
-        isGameOver = false;
+        isGameOn = false;
         GameObject.FindGameObjectWithTag("Player").transform.position = lastCheckPointPos;
     }
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        if (isGameOver)
+        if (isGameOn)
         {
-            gameOverScreen.SetActive(true);
+            gameOverS.SetActive(true);
         }
-        
+
     }
 
     public void ReplayLevel()
