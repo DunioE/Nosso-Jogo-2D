@@ -234,7 +234,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8f5e46202c10072488672784681be7fa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ae5ac76d904b9eb43a26095e7425c67b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.235
   m_Pitch: 1
@@ -38809,6 +38809,7 @@ GameObject:
   - component: {fileID: 642656213}
   - component: {fileID: 642656216}
   - component: {fileID: 642656215}
+  - component: {fileID: 642656217}
   m_Layer: 0
   m_Name: pista
   m_TagString: Untagged
@@ -38876,7 +38877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642656212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 297.27, y: 9.26, z: 0}
+  m_LocalPosition: {x: 297.6, y: 9.52, z: 0}
   m_LocalScale: {x: 0.76135, y: 0.76135, z: 0.76135}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38897,8 +38898,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 41513860}
   textMeshPro: {fileID: 1910090452}
-  objectLifetime: 4
-  messageLifetime: 0
+  objectLifetime: 0
+  messageLifetime: 4
 --- !u!61 &642656216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38925,6 +38926,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.85, y: 2.55}
   m_EdgeRadius: 0
+--- !u!95 &642656217
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642656212}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36c3f1593270f2c4795099f11568da10, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &678833515
 GameObject:
   m_ObjectHideFlags: 0
@@ -44129,8 +44151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1b48e3b5e872a748a2b68cfe198f94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  range: 3
+  speed: 2
+  range: 4
 --- !u!212 &2116881108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44191,7 +44213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116881105}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 278.15, y: 8.65, z: 0}
+  m_LocalPosition: {x: 278.15, y: 8.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
