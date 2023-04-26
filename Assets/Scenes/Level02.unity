@@ -526,7 +526,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -38437,9 +38437,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.0291328, y: 14.940169}
-      - {x: -27.631454, y: 14.940898}
-      - {x: -27.36364, y: -20.469303}
+    - - {x: 1.0875893, y: 16.927681}
+      - {x: -27.982193, y: 16.869955}
+      - {x: -28.357391, y: -20.82004}
       - {x: 147.08319, y: -19.800556}
       - {x: 146.82379, y: 14.472738}
 --- !u!4 &501116550
@@ -38683,7 +38683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593005845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138.7, y: 3.8000002, z: 0}
+  m_LocalPosition: {x: 138.7, y: 3.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
