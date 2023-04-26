@@ -9,7 +9,7 @@ public class Checkpoint : MonoBehaviour
     {
         if(collision.transform.tag == "Player")
         {
-            PlayerManager.lastCheckPointPos = transform.position;
+            Real.lastCheckPointPos = transform.position;
             GetComponent<SpriteRenderer>().color = Color.green;
             AudioManager.instance.Play("Checkpoint");
         }
