@@ -28220,7 +28220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2049642015
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28610,7 +28610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 2049642016}
   textMeshPro: {fileID: 1345484622}
-  objectLifetime: 1
+  objectLifetime: 0
   messageLifetime: 4
 --- !u!95 &2094653354
 Animator:
