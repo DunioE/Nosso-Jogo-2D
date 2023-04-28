@@ -488,7 +488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &41513858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40121,7 +40121,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 902430380}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: da75b2b00fcd2e5448e9e83aa67ff994, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
